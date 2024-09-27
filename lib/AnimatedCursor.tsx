@@ -16,27 +16,7 @@ import type {
 import find from './helpers/find'
 import useIsTouchdevice from './hooks/useIsTouchdevice'
 
-/**
- * Cursor Core
- * Replaces the native cursor with a custom animated cursor, consisting
- * of an inner and outer dot that scale inversely based on hover or click.
- *
- * @author Stephen Scaff (github.com/stephenscaff)
- *
- * @param {object} obj
- * @param {array}  obj.clickables - array of clickable selectors
- * @param {string} obj.children - element that is shown instead of the inner dot
- * @param {string} obj.color - rgb color value
- * @param {number} obj.innerScale - inner cursor scale amount
- * @param {number} obj.innerSize - inner cursor size in px
- * @param {object} obj.innerStyle - style object for inner cursor
- * @param {number} obj.outerAlpha - level of alpha transparency for color
- * @param {number} obj.outerScale - outer cursor scale amount
- * @param {number} obj.outerSize - outer cursor size in px
- * @param {object} obj.outerStyle - style object for outer cursor
- * @param {bool}   obj.showSystemCursor - show/hide system cursor1
- * @param {number} obj.trailingSpeed - speed the outer cursor trails at
- */
+
 function CursorCore({
   clickables = [
     'a',
